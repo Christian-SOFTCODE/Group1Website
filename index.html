@@ -11,13 +11,11 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<!-- Hidden checkboxes. The CSS reads their checked state to open the mobile menu and cart drawer. -->
 <input type="checkbox" id="nav-toggle" class="state" aria-label="Toggle navigation">
 <input type="checkbox" id="cart-toggle" class="state" aria-label="Toggle cart">
 
 <a class="skip" href="#main">Skip to content</a>
 
-<!-- NAVIGATION -->
 <header class="site-header">
   <nav class="nav" aria-label="Primary">
     <a class="wordmark" href="#home" aria-label="TasteLocal home">Taste<span>Local</span></a>
@@ -39,7 +37,7 @@
 </header>
 
 <main id="main">
-<!-- HERO -->
+
 <section class="hero" id="home">
   <img class="hero__img" src="images/food 1.jfif" alt="A table of Filipino dishes: adobo, sinigang and grilled pork in warm light">
   <div class="hero__veil"></div>
@@ -77,7 +75,7 @@
   </header>
 
   <div class="catalog">
-    <!-- Signature dishes -->
+
     <div class="grid">
     <article class="dish dish--a" data-cat="best main">
       <figure><img src="images/food 2.webp" alt="Chicken and pork adobo glazed in soy and vinegar" loading="lazy"></figure>
@@ -190,7 +188,6 @@
   </div>
 </section>
 
-<!-- OUR STORY -->
 <section class="story" id="story">
   <figure class="story__img"><img src="images/cat1.jpg" alt="Cooks plating dishes in the TasteLocal kitchen" loading="lazy"></figure>
   <div class="story__text">
@@ -205,8 +202,6 @@
   </div>
 </section>
 
-<!-- RESERVATION
-     Submitting the form jumps to #reserved, which shows the confirmation overlay. -->
 <section class="reserve" id="reserve">
   <div class="reserve__intro">
     <h2>Reserve a table</h2>
@@ -253,7 +248,6 @@
 </section>
 </main>
 
-<!-- FOOTER -->
 <footer class="footer">
   <div class="footer__grid">
     <div><a class="wordmark" href="#home">Taste<span>Local</span></a><p>A taste of home, beautifully served.</p></div>
@@ -267,8 +261,6 @@
   <p class="footer__legal">TasteLocal. MAY BITAW KASI MAY TASTE!</p>
 </footer>
 
-<!-- CART DRAWER
-     A visual demo. Items and totals are static text. -->
 <label for="cart-toggle" class="scrim" aria-hidden="true"></label>
 <aside class="cart" aria-label="Shopping bag">
   <header><h2>Your bag</h2><label for="cart-toggle" class="close" aria-label="Close bag">&times;</label></header>
