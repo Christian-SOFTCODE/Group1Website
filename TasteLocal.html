@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TasteLocal | Modern Filipino Restaurant</title>
+<meta name="description" content="TasteLocal serves authentic Filipino cuisine. A taste of home, beautifully served.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Hidden checkboxes. The CSS reads their checked state to open the mobile menu and cart drawer. -->
+<input type="checkbox" id="nav-toggle" class="state" aria-label="Toggle navigation">
+<input type="checkbox" id="cart-toggle" class="state" aria-label="Toggle cart">
+
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- NAVIGATION -->
+<header class="site-header">
+  <nav class="nav" aria-label="Primary">
+    <a class="wordmark" href="#home" aria-label="TasteLocal home">Taste<span>Local</span></a>
+    <label for="nav-toggle" class="burger" aria-label="Open menu"><i></i><i></i><i></i></label>
+    <ul class="nav__links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#menu">Our Menu</a></li>
+      <li><a href="#story">Our Story</a></li>
+      <li><a href="#visit">Visit Us</a></li>
+    </ul>
+    <div class="nav__actions">
+      <a class="btn btn--gold btn--sm" href="#reserve">Reserve</a>
+      <label for="cart-toggle" class="bag" aria-label="Open shopping bag">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 8h14l-1 12H6L5 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+        <b>3</b>
+      </label>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+<!-- HERO -->
+<section class="hero" id="home">
+  <img class="hero__img" src="images/food 1.jfif" alt="A table of Filipino dishes: adobo, sinigang and grilled pork in warm light">
+  <div class="hero__veil"></div>
+  <div class="hero__body">
+    <p class="hero__est">Modern Filipino kitchen, Davao Del Norte | Panabo City</p>
+    <h1>Rediscover the Flavors of&nbsp;Home.</h1>
+    <p class="hero__lead">TasteLocal cooks the dishes our lolas taught us, with ingredients from Panabo City farms and fishing boats, served the way family would serve you.</p>
+    <div class="hero__cta">
+      <a class="btn btn--gold" href="#menu">Explore Our Menu</a>
+      <a class="btn btn--ghost" href="#reserve">Reserve a Table</a>
+    </div>
+    </div>
+    <p class="hero__tag">A taste of home,<br>beautifully served.</p>
+</section>
+
+
+<section class="menu" id="menu">
+    <input type="radio" name="f" id="f-all" class="state" checked>
+    <input type="radio" name="f" id="f-best" class="state">
+    <input type="radio" name="f" id="f-main" class="state">
+    <input type="radio" name="f" id="f-rice" class="state">
+    <input type="radio" name="f" id="f-snack" class="state">
+    <input type="radio" name="f" id="f-dessert" class="state">
+
+    <header class="section-head">
+        <h2>Our menu</h2>
+        <p>Order from our signature plates or the full kitchen. Prices are in Philippine pesos.</p>
+        <div class="filters" role="group" aria-label="Menu categories">
+            <label for="f-all">All</label>
+            <label for="f-best">Best Sellers</label>
+            <label for="f-main">Main Courses</label>
+            <label for="f-rice">Rice Meals</label>
+            <label for="f-dessert">Desserts</label>
+    </div>
+  </header>
+
+  <div class="catalog">
+    <!-- Signature dishes -->
+    <div class="grid">
+    <article class="dish dish--a" data-cat="best main">
+      <figure><img src="images/food 2.webp" alt="Chicken and pork adobo glazed in soy and vinegar" loading="lazy"></figure>
+      <div class="dish__info"><h3>Adobo</h3><p class="price">₱100</p>
+        <p>Chicken and pork braised slowly in cane vinegar, soy and garlic until glossy.</p>
+        <label for="cart-toggle" class="btn btn--line btn--sm">Add to Cart</label></div>
+
+    </article>
+    <article class="dish dish--b" data-cat="best main">
+      <figure><img src="images/food 3.jfif" alt="Crispy kare-kare in peanut sauce with vegetables" loading="lazy"></figure>
+      <div class="dish__info"><h3>Crispy Kare-Kare</h3><p class="price">₱150</p>
+        <p>Crackling oxtail, ground peanut sauce, banana blossom, house bagoong.</p>
+        <label for="cart-toggle" class="btn btn--line btn--sm">Add to Cart</label></div>
+    </article>
+
+    <article class="dish dish--c" data-cat="main">
+      <figure><img src="images/food 4.webp" alt="Steaming bowl of pork sinigang with tamarind broth" loading="lazy"></figure>
+      <div class="dish__info"><h3>Sinigang</h3><p class="price">₱80</p>
+        <p>Sour tamarind broth, pork belly, kangkong and radish.</p>
+        <label for="cart-toggle" class="btn btn--line btn--sm">Add to Cart</label></div>
+    </article>
+
+    <article class="dish dish--d" data-cat="best rice">
+      <figure><img src="images/food 5.jpg" alt="Sizzling pork sisig topped with an egg" loading="lazy"></figure>
+      <div class="dish__info"><h3>Sisig</h3><p class="price">₱120</p>
+        <p>Chopped pork cheek on a sizzling plate, calamansi, chili, egg.</p>
+        <label for="cart-toggle" class="btn btn--line btn--sm">Add to Cart</label></div>
+    </article>
+
+    <article class="dish dish--e" data-cat="rice snack">
+      <figure><img src="images/food 6.jfif" alt="Sliced lechon kawali with liver sauce" loading="lazy"></figure>
+      <div class="dish__info"><h3>Lechon Kawali</h3><p class="price">₱150</p>
+        <p>Pork belly boiled, then fried until the skin shatters. Liver sauce on the side.</p>
+        <label for="cart-toggle" class="btn btn--line btn--sm">Add to Cart</label></div>
+    </article>
+
+    <article class="dish dish--f" data-cat="dessert">
+      <figure><img src="images/food 8.jpg" alt="Tall glass of halo-halo with ube, leche flan and shaved ice" loading="lazy"></figure>
+      <div class="dish__info"><h3>Halo-Halo</h3><p class="price">₱85</p>
+        <p>Shaved ice, ube halaya, leche flan, sweet beans, coconut and milk.</p>
+        <label for="cart-toggle" class="btn btn--line btn--sm">Add to Cart</label></div>
+    </article>
+    </div>
+
+    <h3 class="list-title">More from the kitchen</h3>
+    <ul class="list">
+      <li class="row" data-cat="main">
+        <figure class="row__photo"><img src="https://curiousflavors.com/wp-content/uploads/2023/12/Untitled-design-2.png" alt="Bicol Express" loading="lazy"></figure>
+        <div><h4>Bicol Express</h4><p>Pork in coconut milk and long green chili.</p></div>
+        <span class="price">₱50</span>
+        <label for="cart-toggle" class="btn btn--line btn--sm" aria-label="Add Bicol Express to cart">Add</label>
+      </li>
+
+      <li class="row" data-cat="main">
+        <figure class="row__photo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFKmdv8ZR9_6lOSAqV5deSF3mVNlZfjTZdKPctRRcjXP_CaHNPF0czRCvV&s=10" alt="Bicol Express" loading="lazy"></figure>
+        <div><h4>Kinilaw na Tanigue</h4><p>Fresh tuna cured in vinegar, ginger and calamansi.</p></div>
+        <span class="price">₱50</span>
+        <label for="cart-toggle" class="btn btn--line btn--sm" aria-label="Add Kinilaw na Tanigue to cart">Add</label>
+      </li>
+
+      <li class="row" data-cat="rice">
+        <figure class="row__photo"><img src="https://foodandjourneys.net/wp-content/uploads/2021/08/Tapsilog-Recipe-PIC4.jpg" alt="Bicol Express" loading="lazy"></figure>
+        <div><h4>Tapsilog</h4><p>Cured beef, garlic rice, fried egg.</p></div>
+        <span class="price">₱50</span>
+        <label for="cart-toggle" class="btn btn--line btn--sm" aria-label="Add Tapsilog to cart">Add</label>
+      </li>
+
+      <li class="row" data-cat="rice">
+        <figure class="row__photo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPzVpCJOdVPOs8tCX-RvCjmCxIz6qRmi6sNfi32EXxV8h36HGlwV6yf2T4&s=10" alt="Bicol Express" loading="lazy"></figure>
+        <div><h4>Chicken Inasal set</h4><p>Lemongrass-marinated chicken grilled over charcoal, with rice.</p></div>
+        <span class="price">₱120</span>
+        <label for="cart-toggle" class="btn btn--line btn--sm" aria-label="Add Chicken Inasal set to cart">Add</label>
+      </li>
+
+      <li class="row" data-cat="snack">
+        <figure class="row__photo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoe4ocsy0Eb3oWv2qVeOUglLgW7sP2wZG4oxJioNvtn8m8z9YysjNUbmvw&s=10" alt="Bicol Express" loading="lazy"></figure>
+        <div><h4>Lumpiang Shanghai</h4><p>Crisp pork spring rolls with sweet chili dip.</p></div>
+        <span class="price">₱20</span>
+        <label for="cart-toggle" class="btn btn--line btn--sm" aria-label="Add Lumpiang Shanghai to cart">Add</label>
+      </li>
+
+      <li class="row" data-cat="snack">
+        <figure class="row__photo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfUTtvd7xjpFy8KBuBoX7yY_BCjFwKzrGr5du6pURPliHH1ogRJNf0nq7X&s=10" alt="Bicol Express" loading="lazy"></figure>
+        <div><h4>Pancit Palabok</h4><p>Rice noodles in shrimp sauce, chicharron and egg.</p></div>
+        <span class="price">₱60</span>
+        <label for="cart-toggle" class="btn btn--line btn--sm" aria-label="Add Pancit Palabok to cart">Add</label>
+      </li>
+
+      <li class="row" data-cat="snack">
+        <figure class="row__photo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgcZ1Zg95jUMyj4gJaU6VeUXs51snrSyVHnTonOUDc8RNfPcnrF1fDhqA&s=10" alt="Bicol Express" loading="lazy"></figure>
+        <div><h4>Turon with langka</h4><p>Banana and jackfruit in a caramelized wrapper.</p></div>
+        <span class="price">₱10</span>
+        <label for="cart-toggle" class="btn btn--line btn--sm" aria-label="Add Turon with langka to cart">Add</label>
+      </li>
+
+      <li class="row" data-cat="dessert">
+        <figure class="row__photo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYs5qtD55n9do2er-s5bhCP3Gbe2qUd0dRTc0g1R1_bclYYWnfjeuexj1f&s=10" alt="Bicol Express" loading="lazy"></figure>
+        <div><h4>Leche Flan</h4><p>Silky caramel custard, slow steamed.</p></div>
+        <span class="price">₱30</span>
+        <label for="cart-toggle" class="btn btn--line btn--sm" aria-label="Add Leche Flan to cart">Add</label>
+      </li>
+
+      <li class="row" data-cat="dessert">
+        <figure class="row__photo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTduaANdx86rpw1Uu8p8528ZZ9Dz0-Dl7-28zUZia-08tmaJDXOsriMZorj&s=10" alt="Bicol Express" loading="lazy"></figure>
+        <div><h4>Buko Pandan</h4><p>Young coconut, pandan jelly and cream.</p></div>
+        <span class="price">₱15</span>
+        <label for="cart-toggle" class="btn btn--line btn--sm" aria-label="Add Buko Pandan to cart">Add</label>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- OUR STORY -->
+<section class="story" id="story">
+  <figure class="story__img"><img src="images/cat1.jpg" alt="Cooks plating dishes in the TasteLocal kitchen" loading="lazy"></figure>
+  <div class="story__text">
+    <h2>Cooked the way we were raised</h2>
+    <p>TasteLocal began at a family table, where Sunday meant a pot of sinigang and too many cousins. We opened to bring that table to the city.</p>
+    <p>Our pork comes from small farms, our fish from the Davao Gulf, and our vinegar from a family that has fermented it for three generations. We do not reinvent Filipino food. We cook it carefully and serve it warmly.</p>
+    <dl class="pillars">
+      <div><dt>Authentic flavor</dt><dd>Recipes passed down, not rewritten.</dd></div>
+      <div><dt>Local ingredients</dt><dd>Sourced within Mindanao wherever possible.</dd></div>
+      <div><dt>Warm hospitality</dt><dd>Everyone is treated like family.</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- RESERVATION
+     Submitting the form jumps to #reserved, which shows the confirmation overlay. -->
+<section class="reserve" id="reserve">
+  <div class="reserve__intro">
+    <h2>Reserve a table</h2>
+    <p>Tell us when you are coming and what to prepare. We will confirm by email. This demo form does not store or send submissions until connected to a backend.</p>
+  </div>
+  <form class="form" action="#reserved" method="get">
+    <div class="field"><label for="name">Full name</label><input id="name" name="name" required autocomplete="name"></div>
+    <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" required autocomplete="email"></div>
+    <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" required autocomplete="tel"></div>
+    <div class="field"><label for="guests">Guests</label>
+      <select id="guests" name="guests" required><option value="" hidden>Select</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7+</option></select></div>
+    <div class="field"><label for="date">Date</label><input id="date" name="date" type="date" required></div>
+    <div class="field"><label for="time">Time</label><input id="time" name="time" type="time" min="11:00" max="21:00" required></div>
+    <div class="field field--full"><label for="notes">Special requests</label><textarea id="notes" name="notes" rows="3"></textarea></div>
+    <button class="btn btn--green field--full" type="submit">Request reservation</button>
+  </form>
+  <div class="confirm" id="reserved" role="status">
+    <div class="confirm__box">
+      <h3>Request received</h3>
+      <p>In a live site, a confirmation email would follow. Nothing was stored from this demo.</p>
+      <a class="btn btn--green" href="#reserve">Back to the form</a>
+    </div>
+  </div>
+</section>
+
+<!-- VISIT US
+     Replace the address, phone, email and hours with the real details. -->
+<section class="visit" id="visit">
+  <div class="visit__info">
+    <h2>Visit us</h2>
+    <address>
+      123 Sample Street, Poblacion District<br>Davao City, Philippines 8000<br>
+      <a href="tel:+63820000000">+63 82 000 0000</a><br>
+      <a href="mailto:hello@tastelocal.example">hello@tastelocal.example</a>
+    </address>
+    <table class="hours"><caption class="sr">Opening hours</caption>
+      <tr><th>Monday to Thursday</th><td>8:00AM to 10:PM</td></tr>
+      <tr><th>Friday and Saturday</th><td>1:00PM to 8:00AM</td></tr>
+      <tr><th>Sunday</th><td>24/7Hrs | SORRY MAY BITAW LANG</td></tr>
+    </table>
+    <p class="social"><a href="#">Instagram</a><a href="#">Facebook</a><a href="#">TikTok</a></p>
+  </div>
+  <iframe class="visit__map" title="Map of Davao City" loading="lazy" src="https://maps.google.com/maps?q=Davao%20City&output=embed"></iframe>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer__grid">
+    <div><a class="wordmark" href="#home">Taste<span>Local</span></a><p>A taste of home, beautifully served.</p></div>
+    <nav aria-label="Footer"><h4>Explore</h4><a href="#menu">Our Menu</a><a href="#story">Our Story</a><a href="#reserve">Reservations</a><a href="#visit">Visit Us</a></nav>
+    <div><h4>Contact</h4><a href="tel:+63820000000">+63 82 000 0000</a><a href="mailto:hello@tastelocal.example">hello@tastelocal.example</a><span>Poblacion District, Davao City</span></div>
+    <div><h4>Hours</h4>
+      <span>Mon to Thu 8:00AM to 10:PM</span>
+      <span>Fri, Sat 1:00PM to 8:00AM</span>
+      <span>Sun 24/7 | SORRY MAY BITAW LANG</span></div>
+  </div>
+  <p class="footer__legal">TasteLocal. MAY BITAW KASI MAY TASTE!</p>
+</footer>
+
+<!-- CART DRAWER
+     A visual demo. Items and totals are static text. -->
+<label for="cart-toggle" class="scrim" aria-hidden="true"></label>
+<aside class="cart" aria-label="Shopping bag">
+  <header><h2>Your bag</h2><label for="cart-toggle" class="close" aria-label="Close bag">&times;</label></header>
+  <ul class="cart__items">
+    <li><img src="images/food 2.webp" alt="Adobo"><div><h3>Adobo</h3><p>Qty 1</p></div><span>₱100</span></li>
+    <li><img src="images/food 5.jpg" alt="Sisig"><div><h3>Sisig</h3><p>Qty 1</p></div><span>₱120</span></li>
+    <li><img src="images/food 7.avif" alt="Halo-halo"><div><h3>Halo-Halo</h3><p>Qty 1</p></div><span>₱85</span></li>
+  </ul>
+  <dl class="cart__total"><div><dt>Subtotal</dt><dd>₱305</dd></div><div class="grand"><dt>Total</dt><dd>₱305</dd></div></dl>
+  <a class="btn btn--green" href="#reserve">Checkout</a>
+  <p class="cart__note">Group 1, Always may BITAW!! pero BINITAWAN</p>
+</aside>
+</body>
+</html>
